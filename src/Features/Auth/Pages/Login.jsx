@@ -68,6 +68,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validate()) return;
+    console.log("Submitting", formData);
     mutation.mutate(formData);
   };
 
