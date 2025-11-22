@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+@theme {
+  --color-bg-light-primary: #fff;
+  --color-bg-light-secondary: #f0f2f4;
+  --color-text-light: #fff;
+  --color-bg-dark-primary: #1d1616;
+  --color-bg-dark-secondary: #3c3d37;
+  --color-text-dark: #08090c;
+  --color-accent-primary-main: #135bec;
+  --color-accent-warning-main: #ffc50f;
+  --color-accent-error-main: #d32f2f;
+  --color-accent-success-main: #2e7d32;
+  --color-accent-primary-dark: #0e41a9; /*hover*/
+  --color-accent-warning-dark: #b68a00; /*hover*/
+  --color-accent-error-dark: #962020; /*hover*/
+  --color-accent-success-dark: #3a9e3f; /*hover*/
+}
+
