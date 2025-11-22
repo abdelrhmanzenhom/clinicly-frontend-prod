@@ -4,7 +4,7 @@ import Snackbar from "@mui/material/Snackbar";
 import DoctorSearch from "../DoctorSearch";
 import PatientSearch from "../PatientSearch";
 import DoctorCalender from "../DoctorCalender";
-import ConfirmBooking from "../confirmBooking";
+import ConfirmBooking from "../ConfirmBooking";
 import DoctorTime from "../DoctorTime";
 import { green, red } from "@mui/material/colors";
 import SnackbarContent from "@mui/material/SnackbarContent";
