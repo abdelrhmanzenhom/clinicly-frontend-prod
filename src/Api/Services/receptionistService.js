@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/admin";
+const API_URL = import.meta.env.VITE_BASE_URL;
 
 export const createReceptionist = async (data) => {
     const token = localStorage.getItem("accessToken");

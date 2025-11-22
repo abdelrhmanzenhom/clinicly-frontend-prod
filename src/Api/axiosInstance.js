@@ -1,13 +1,13 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_BASE_URL, // ✅ dynamic: works for localhost + production
 });
 
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("accessToken");
-    console.log("Axios Interceptor - Token:", token); // Debugging line
+    console.log("Axios Interceptor - Token:", token);
 
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;

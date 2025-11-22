@@ -23,7 +23,7 @@
 const API_URL = "http://localhost:5000/api/patients";
 
 export const getAppointmentsHistory = async (patientId) => {
-  const response = await axios.get(`${API_URL}/${patientId}/history`);
+  const response = await api.get(`${API_URL}/${patientId}/history`);
   return response.data;
 };
 
@@ -46,14 +46,14 @@ const ENDPOINT_URL = `${import.meta.env.VITE_BASE_URL}/appointments`
 //                     "notes": null
 // }
 export const createAppointment = async (appointmentData) => {
-  const pew = (await axios.post(ENDPOINT_URL, appointmentData)).data // Add headers later
+  const pew = (await api.post(ENDPOINT_URL, appointmentData)).data // Add headers later
   console.log(pew);
   return pew;
 }
 
 export const getAvailableSlots = async (doctorId, date) => {
   console.log(doctorId, date);
-  const pew = (await axios.get(`${ENDPOINT_URL}/available-slots`, {
+  const pew = (await api.get(`${ENDPOINT_URL}/available-slots`, {
     params: {
       doctorId,
       date

@@ -1,7 +1,7 @@
-const API_URL = "http://localhost:5000/api";
+const API_URL = import.meta.env.VITE_BASE_URL;
 
 const getAuthHeaders = () => {
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem("accessToken");
   return {
     "Content-Type": "application/json",
     Authorization: token ? `Bearer ${token}` : "",

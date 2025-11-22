@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 async function handleResponse(response) {
   const contentType = response.headers.get("content-type");
@@ -18,7 +18,7 @@ async function handleResponse(response) {
 }
 
 function getAuthHeaders() {
-  const token = localStorage.getItem("token");
+  const token = localStorage.getItem("accessToken");
   return token ? { Authorization: `Bearer ${token}` } : {};
 }
 
