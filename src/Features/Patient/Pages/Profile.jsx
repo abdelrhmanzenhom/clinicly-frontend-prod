@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import ProfileInfo from "../components/ProfileInfo";
 import { getAllPatients } from "../../../Api/Services/PatientService";
 import { useAuth } from "../../../Context/AuthContext";
-import EditProfile from "../Components/EditProfile";
+import EditProfile from "../components/EditProfile";
 // import { getAllPatients } from "../../../Api/Services/patients";
 
 export default function Profile() {
