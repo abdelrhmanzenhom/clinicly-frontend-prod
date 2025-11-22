@@ -397,7 +397,7 @@ const Signup = () => {
           {/* Google Signup/Login */}
           <div className="flex justify-center my-4">
             <Link
-              href="http://localhost:5000/api/oauth/google-login"
+              href={`${import.meta.env.VITE_BASE_URL}/oauth/google-login`}
               className="flex items-center justify-center w-full max-w-md border border-gray-300 rounded-lg py-2 px-4 hover:bg-gray-100 transition"
             >
               <img

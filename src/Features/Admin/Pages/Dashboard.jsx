@@ -4,7 +4,7 @@ import axios from "axios";
 
 const fetchAdminDashboard = async () => {
   const token = localStorage.getItem("accessToken");
-  const res = await axios.get("http://localhost:5000/api/dashboard/admin", {
+  const res = await axios.get(`${import.meta.env.VITE_BASE_URL}/dashboard/admin`, {
     headers: { Authorization: `Bearer ${token}` },
   });
   return res.data;

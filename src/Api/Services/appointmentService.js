@@ -1,6 +1,6 @@
 // import axios from "axios";
 
-// const API_URL = "http://localhost:5000/api/patients";
+
 
 // const getAppointmentsHistory = async (patientId) => {
 //   const token = localStorage.getItem("token");
@@ -20,7 +20,7 @@
 
 // import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/patients";
+const API_URL = `${import.meta.env.VITE_BASE_URL}/patients`;
 
 export const getAppointmentsHistory = async (patientId) => {
   const response = await api.get(`${API_URL}/${patientId}/history`);
