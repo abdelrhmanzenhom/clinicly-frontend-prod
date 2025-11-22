@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { Snackbar, Alert } from "@mui/material";
 import { jwtDecode } from "jwt-decode";
-import { getUserById } from "../Features/Auth/api/auth";
+import { getUserById } from "../Features/Auth/Api/auth";
 import { getSuperUser } from "../Api/Services/userService";
 import { useNavigate } from "react-router";
 
