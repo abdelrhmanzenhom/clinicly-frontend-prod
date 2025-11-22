@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
-import { signupPatient } from "../api/auth";
+import { signupPatient } from "../Api/auth";
 import toast from "react-hot-toast";
 import { Link } from "react-router";
 
