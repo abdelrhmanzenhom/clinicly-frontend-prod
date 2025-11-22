@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useMutation } from "@tanstack/react-query";
-import { createDoctor } from "../../../Api/Services/DoctorService";
+import { createDoctor } from "../../../Api/Services/doctorService";
 import Select from "react-select";
 
 const universityOptions = [
